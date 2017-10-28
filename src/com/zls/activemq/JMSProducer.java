@@ -34,7 +34,7 @@ public class JMSProducer {
 			connection=connectionFactory.createConnection();//通过连接工厂获取连接
 			connection.start(); //启动连接
 			session=connection.createSession(Boolean.TRUE, Session.AUTO_ACKNOWLEDGE);//创建session
-			destination=session.createQueue("FirstQueue1");//创建消息队列
+			destination=session.createTopic("FirstTopic1");//创建消息订阅
 			messageProducer=session.createProducer(destination); //创建消息生产者
 			sendMessage(session, messageProducer);
 			session.commit();

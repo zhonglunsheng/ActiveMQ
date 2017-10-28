@@ -29,7 +29,7 @@ public class JMSConsumer {
 			connection=connectionFactory.createConnection();//通过连接工厂获取连接
 			connection.start(); //启动连接
 			session=connection.createSession(Boolean.TRUE, Session.AUTO_ACKNOWLEDGE);//创建session
-			destination=session.createQueue("FirstQueue1");//创建消息队列
+			destination=session.createTopic("FirstTopic1");//创建消息订阅
 			messageConsumer=session.createConsumer(destination);//创建消息消费者
 			messageConsumer.setMessageListener(new Listener());//注册消息监听
 		} catch (Exception e) {
