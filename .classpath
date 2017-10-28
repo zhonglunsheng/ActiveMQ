@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="F:/codeWrite/Java环境包/JMS之ActiveMQ/activemq-all-5.11.1.jar" sourcepath="C:/Users/ZHONGL~1/AppData/Local/Temp/.org.sf.feeling.decompiler1509165151746/source/activemq-all-5.11.1-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
